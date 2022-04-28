@@ -34,6 +34,6 @@ print("\nTotal count for 00 and 11 are:",counts)
 print(circuit)
 
 # Draw the circuit
-circuit.draw()
+circuit.draw(output='mpl',filename='practice_circuit.png')
 
-plot_histogram(counts)
+plot_histogram(counts,filename='histogram.png')
