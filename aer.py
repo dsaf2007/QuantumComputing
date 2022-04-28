@@ -32,5 +32,15 @@ meas.measure(range(3),range(3))
 circ.add_register(meas.cregs[0])
 qc = circ.compose(meas)
 
-print(qc)
+#print(qc)
 qc.draw(output='mpl',filename="qc_circuit.png")
+
+backend_sim = Aer.get_backend('qasm_simulator')
+job_sim = backend_sim.run(transpile(qc,backend_sim),shots=1024)
+
+result_sim = job_sim.result()
+
+counts = result_sim.get_counts(qc)
+print(counts)
+
+plot_histogram(counts, filename="qasm_histogram.png")
