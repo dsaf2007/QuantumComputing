@@ -19,6 +19,18 @@ job = backend.run(circ)
 result = job.result()
 
 outputstate = result.get_statevector(circ,decimals=3)
-print(outputstate)
+#print(outputstate)
 
-plot_state_city(outputstate, filename='outputstate.png')
+#plot_state_city(outputstate, filename='outputstate.png')
+
+
+#create quantum circuit
+meas = QuantumCircuit(3,3)
+meas.barrier(range(3))
+meas.measure(range(3),range(3))
+
+circ.add_register(meas.cregs[0])
+qc = circ.compose(meas)
+
+print(qc)
+qc.draw(output='mpl',filename="qc_circuit.png")
