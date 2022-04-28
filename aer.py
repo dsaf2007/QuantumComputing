@@ -22,4 +22,3 @@ outputstate = result.get_statevector(circ,decimals=3)
 print(outputstate)
 
 plot_state_city(outputstate, filename='outputstate.png')
-
