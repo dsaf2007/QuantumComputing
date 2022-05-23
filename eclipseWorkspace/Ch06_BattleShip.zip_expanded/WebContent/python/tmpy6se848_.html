@@ -1,0 +1,39 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>ValueError</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 3.10.4: /home/dsaf2007/anaconda3/envs/Quantum/bin/python<br>Mon May 23 21:26:28 2022</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///home/dsaf2007/repos/QuantumComputing/eclipseWorkspace/Ch06_BattleShip.zip_expanded/WebContent/python/qbattleship.py">/home/dsaf2007/repos/QuantumComputing/eclipseWorkspace/Ch06_BattleShip.zip_expanded/WebContent/python/qbattleship.py</a> in <strong>&lt;module&gt;</strong></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;57</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;58</small>&nbsp;shipPos[0]&nbsp;=&nbsp;list(map(int,&nbsp;ships1.split(",")))&nbsp;&nbsp;#&nbsp;[0,1,2]<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;59</small>&nbsp;shipPos[1]&nbsp;=&nbsp;list(map(int,&nbsp;ships2.split(",")))&nbsp;&nbsp;#&nbsp;[0,1,2]<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;60</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;61</small>&nbsp;bomb[0]&nbsp;=&nbsp;list(map(int,&nbsp;bombs1.split(",")))<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>shipPos</strong>&nbsp;= [[0, 2, 3], [-1, -1, -1]], <em>builtin</em> <strong>list</strong>&nbsp;= &lt;class 'list'&gt;, <em>builtin</em> <strong>map</strong>&nbsp;= &lt;class 'map'&gt;, <em>builtin</em> <strong>int</strong>&nbsp;= &lt;class 'int'&gt;, <strong>ships2</strong>&nbsp;= '1,2,4,', ships2.<strong>split</strong>&nbsp;= &lt;built-in method split of str object&gt;</font></small></td></tr></table><p><strong>ValueError</strong>: invalid literal for int() with base 10: ''
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+("invalid literal for int() with base 10: ''",)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>with_traceback&nbsp;=
+&lt;built-in method with_traceback of ValueError object&gt;
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/home/dsaf2007/repos/QuantumComputing/eclipseWorkspace/Ch06_BattleShip.zip_expanded/WebContent/python/qbattleship.py", line 59, in &lt;module&gt;
+    shipPos[1] = list(map(int, ships2.split(",")))  # [0,1,2]
+ValueError: invalid literal for int() with base 10: ''
+
+-->

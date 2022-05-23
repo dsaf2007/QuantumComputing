@@ -53,8 +53,8 @@ public class IOTools {
     public static StringBuffer executePython (String base, String args) throws IOException, InterruptedException {
         String driver  = base + File.separator + "python" + File.separator + "qiskit-driver.sh";
         String program =  base + File.separator + "python" + File.separator + "qbattleship.py";
-        String cmd = driver + " " + program + ( args != null ? " " + args : "");
-        //cmd = "python3 " + program + ( args != null ? " " + args : "");
+        //String cmd = driver + " " + program + ( args != null ? " " + args : "");
+        String cmd = "python3 " + program + ( args != null ? " " + args : "");
         //System.out.println("Execute Python: " + cmd );
         SysRunner r = new SysRunner(cmd);
         r.run();

@@ -181,7 +181,9 @@ public class WSConnector {
         // Execute Python script
 	    // STDOUT {status: 200, message: 'Some text', damage: [[0,0,0,0,0],[0,0,0,0,0]]}
         StringBuffer stdout = IOTools.executePython(SCRIPT_ROOT, args);
+        System.out.println("std out" + stdout.toString());
         JSONObject resp = new JSONObject(stdout.toString());
+       
 
         System.out.println("*** GOT STDOUT: " + stdout + " JSON:" + resp);
         

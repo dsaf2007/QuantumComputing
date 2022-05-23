@@ -35,16 +35,18 @@ shipPos = [[-1]*3 for _ in range(2)]
 bomb = [[0]*5 for _ in range(2)]  # all values are initialized to zero
 
 # CGI - parse HTTP request
-form = cgi.FieldStorage()
+#form = cgi.FieldStorage()
 
-ships1 = form["ships1"].value
-ships2 = form["ships2"].value
-bombs1 = form["bombs1"].value
-bombs2 = form["bombs2"].value
+
+ships1 = sys.argv[1] 
+ships2 = sys.argv[2] 
+bombs1 = sys.argv[3] 
+bombs2 = sys.argv[4]
 
 #device = 'ibmqx_qasm_simulator'
 #device = 'local_qasm_simulator'
-device = str(form["device"].value)
+#device = str(form["device"].value)
+device = str(sys.argv[5])
 
 ###### TEST
 #shipPos[0] = list(map(int, "0,1,2".split(","))) # [0,1,2]
@@ -93,7 +95,7 @@ for player in range(2):
             for ship in [0, 1, 2]:
                 if (position == shipPos[player][ship]):
                     frac = 1/(ship+1)
-                    gridScript.u3(frac * math.pi, 0.0, 0.0, q[position]) 
+                    gridScript.u(frac * math.pi, 0.0, 0.0, q[position]) 
 
     #finally, measure them
     for position in range(5):

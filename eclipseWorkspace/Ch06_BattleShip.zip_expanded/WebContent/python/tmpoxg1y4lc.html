@@ -1,0 +1,39 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>IndexError</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 3.10.4: /home/dsaf2007/anaconda3/envs/Quantum/bin/python<br>Mon May 23 21:19:03 2022</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///home/dsaf2007/repos/QuantumComputing/eclipseWorkspace/Ch06_BattleShip.zip_expanded/WebContent/python/qbattleship.py">/home/dsaf2007/repos/QuantumComputing/eclipseWorkspace/Ch06_BattleShip.zip_expanded/WebContent/python/qbattleship.py</a> in <strong>&lt;module&gt;</strong></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;46</small>&nbsp;ships2&nbsp;=&nbsp;sys.argv[3]&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;47</small>&nbsp;bombs1&nbsp;=&nbsp;sys.argv[4]&nbsp;<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;48</small>&nbsp;bombs2&nbsp;=&nbsp;sys.argv[5]<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;49</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;50</small>&nbsp;#device&nbsp;=&nbsp;'ibmqx_qasm_simulator'<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">bombs2 <em>undefined</em>, <strong>sys</strong>&nbsp;= &lt;module 'sys' (built-in)&gt;, sys.<strong>argv</strong>&nbsp;= ['qbattleship.py', '0,2,3', '1,2,4,', '0,0,0,0,1', '0,0,0,0,1']</font></small></td></tr></table><p><strong>IndexError</strong>: list index out of range
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+('list index out of range',)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>with_traceback&nbsp;=
+&lt;built-in method with_traceback of IndexError object&gt;
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/home/dsaf2007/repos/QuantumComputing/eclipseWorkspace/Ch06_BattleShip.zip_expanded/WebContent/python/qbattleship.py", line 48, in &lt;module&gt;
+    bombs2 = sys.argv[5]
+IndexError: list index out of range
+
+-->
