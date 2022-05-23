@@ -16,3 +16,9 @@
 2022-05-23 16:14:29,738 [Worker-8: http://downloads.sourceforge.net/project/sapnweclipse/updates/features/com.sap.netweaver.porta.ide.eclipse.feature_0.7.2.201006211643.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://jaist.dl.sourceforge.net:80
 2022-05-23 16:14:30,008 [Worker-25: http://downloads.sourceforge.net/project/sapnweclipse/updates/features/com.sap.netweaver.porta.ide.eclipse.feature_0.7.2.201006211643.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://jaist.dl.sourceforge.net:80
 2022-05-23 16:16:10,500 [Worker-11: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-05-23 19:34:32,449 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-23 19:50:35,378 [main] INFO  org.eclipse.jetty.server.Server - jetty-10.0.6; built: 2021-06-29T15:28:56.259Z; git: 37e7731b4b142a882d73974ff3bec78d621bd674; jvm 17.0.2+8
+2022-05-23 19:50:35,394 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-05-23 19:50:35,409 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7a254ebe{/wse,null,AVAILABLE}
+2022-05-23 19:50:35,417 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4c394edb{HTTP/1.1, (http/1.1)}{0.0.0.0:34159}
+2022-05-23 19:50:35,424 [main] INFO  org.eclipse.jetty.server.Server - Started Server@4802791f{STARTING}[10.0.6,sto=0] @970843ms
