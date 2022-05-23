@@ -162,6 +162,5 @@ else:
 
 
 # Resposne
-print("Content-type: application/json\n\n")
-print("{\"status\": 200, \"message\": \"" +
-      stdout + "\", \"damage\":" + str(damage) + "}")
+#print("Content-type: application/json\n\n")
+print("{\"status\": 200, \"message\": \"" + stdout + "\", \"damage\":" + str(damage) + "}")
