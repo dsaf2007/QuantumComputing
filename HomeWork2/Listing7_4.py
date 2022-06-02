@@ -57,28 +57,28 @@ def main(M = 16, numberOfCoins = 8 , indexOfFalseCoin = 6, backend = "local_qasm
 
     backend_sim = Aer.get_backend(backend)
 
-    job = backend_sim.run(transpile(circuit,backend_sim),shots)
+    job = backend_sim.run(transpile(circuit,backend_sim),shots=shots)
     result = job.result()
     answer = result.get_counts(circuit)
 
     print("Device " + backend + " counts " + str(answer))
+    plot_histogram(answer,filename='histogram7_4.png')
 
     # Get most common label
     for key in answer.keys():
         normalFlag, _ = Counter(key[1:]).most_common(1)[0]
-
-    for i in range(2,len(key)):
-        if key[i] != normalFlag:
-            print("False coin index is: ", len(key) - i - 1)
+        for i in range(2,len(key)):
+            if key[i] != normalFlag:
+                print("False coin index is: ", len(key) - i - 1)
 
 
 #################################################
 # main
 #################################################
 if __name__ == '__main__':
-    M = 8 #Maximum qubits available
-    numberOfCoins = 4 #Up to M-1, where M is the number of qubits available
-    indexOfFalseCoin = 2 #This should be 0, 1, ..., numberOfCoins - 1,
+    M = 9 #Maximum qubits available
+    numberOfCoins = 8 #Up to M-1, where M is the number of qubits available
+    indexOfFalseCoin = 6 #This should be 0, 1, ..., numberOfCoins - 1,
     backend = "qasm_simulator"
     
     shots = 1 # We perform a one-shot experiment

@@ -13,6 +13,8 @@ def main():
     c = ClassicalRegister(2,'c')
     superdense = QuantumCircuit(q,c)
 
+    q_program = QuantumProgram()
+
     superdense.h(q[0])
     superdense.cx(q[0],q[1])
 
